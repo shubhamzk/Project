@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home & Furniture - Ultimate Shopping Experience</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+<header>
+  <div><h1 class="logo">SK <span>e-commerce 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="Search products, brands, categories..." aria-label="Search products" />
+  </div>
+  <nav role="navigation" aria-label="Main Navigation">
+    <a href="#" tabindex="0">Login</a>
+    <a href="#" tabindex="0">Orders</a>
+    <a href="#" tabindex="0">Cart</a>
+  </nav>
+</header>
+
+<!-- Hero slider -->
+<section class="hero-slider" aria-label="Featured Products Slider">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <!-- <img src="Pending" alt="Latest Electronics Deals" /> -->
+      <div class="slide-content">
+        <h1>Discover Cutting-Edge Electronics</h1>
+        <p>Upgrade your tech with the latest gadgets and devices at unbeatable prices.</p>
+        <button onclick="alert('Explore Electronics')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <!-- <img src="Pending" alt="Fashion Collection" /> -->
+      <div class="slide-content">
+        <h1>Trendy Fashion for Every Season</h1>
+        <p>Find your style with new arrivals and exclusive offers on top brands.</p>
+        <button onclick="alert('Explore Fashion')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <!-- <img src="Pending" alt="Home Furniture" /> -->
+      <div class="slide-content">
+        <h1>Make Your Home Cozy & Stylish</h1>
+        <p>Explore beautiful furniture and decor to refresh your living space.</p>
+        <button onclick="alert('Explore Furniture')">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="Previous Slide" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="Next Slide" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories" aria-label="Shop Categories">
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./index.html"><img src="./Electronics 1.jpg" alt="Electronics Category" /></a>
+    <a href="./index.html"><h3>Electronics</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./fashion.html"><img src="./Fashion.jpg" alt="Fashion Category" /></a>
+    <a href="./fashion.html"><h3> Fashion </h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture1.Jpg" alt="Home & Furniture Category" />
+    <h3>Home & Furniture</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Toys & Games.png" alt="Toys & Games Category" />
+    <h3>Toys & Games</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Books & Stationery.avif" alt="Books & Stationery Category" />
+    <h3>Books & Stationery</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Sports & Outdoors.webp" alt="Sports & Outdoors Category" />
+    <h3>Sports & Outdoors</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Mobiles & Tablets.png" alt="Mobiles & Tablets Category" />
+    <h3>Mobiles & Tablets</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Food & Drinks.avif" alt="Food & Drinks Category" />
+    <h3>Food & Drink</h3>
+  </article>
+</section>
+<section class="featured-products" aria-label="Featured Products">
+  <h2>Featured Products</h2>
+  <div class="products-grid" role="list">
+    <!-- We'll generate 20 product cards with placeholder images -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Sofa or sectional.jpg" alt="Sofa or sectional" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Sofa or Sectional</h3>
+        <p class="product-price">$119</p>
+        <button class="product-btn" onclick="alert('Added Sofa or sectional to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Coffee table.jpg" alt="Coffee Table" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Coffee Table</h3>
+        <p class="product-price">$59</p>
+        <button class="product-btn" onclick="alert('Added Coffee table to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Accent chairs.jpg" alt="Accent chairs" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Accent Chairs</h3>
+        <p class="product-price">$69</p>
+        <button class="product-btn" onclick="alert('Added Accent chairs to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bookshelves or shelving units.jpg" alt="Bookshelves or shelving units" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Bookshelves or Shelving Units</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Bookshelves or shelving units to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dining table.jpg" alt="Dining table" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Dining Table</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Dining table to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Add more similar product cards to reach 20 -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Buffet table or sideboard.jpg" alt="Buffet Table or Sideboard" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Buffet Table or Sideboard</h3>
+        <p class="product-price">$249</p>
+        <button class="product-btn" onclick="alert('Added Buffet table or sideboard to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bed frame and mattress.jpg" alt="Bed frame and mattress" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Bed Frame and Mattress</h3>
+        <p class="product-price">$179</p>
+        <button class="product-btn" onclick="alert('Added Bed frame and mattress to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Nightstands or bedside tables.jpg" alt="Nightstand or Bedside Table" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nightstand or Bedside Table</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Nightstand or Bedside Table to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dresser or chest of drawers.jpg" alt="Dresser or chest of drawer" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Dresser or Chest of Drawer</h3>
+        <p class="product-price">$129</p>
+        <button class="product-btn" onclick="alert('Added Dresser or chest of drawer to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Wardrobe or almirah.jpg" alt="Wardrobe or almirah" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Wardrobe or Almirah</h3>
+        <p class="product-price">$219</p>
+        <button class="product-btn" onclick="alert('Added Wardrobe or Almirah to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Repeat similar cards to reach 20 total -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dressing table .jpg" alt="Dressing Table" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Dressing Table</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Dressing table  to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Desk and desk chair.jpg" alt="Desk And Desk Chair" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Desk and Desk Chair</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Desk and desk chair to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Study table.jpg" alt="Sandal" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Study Table</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Study Table to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Ottoman with storage.jpg" alt="Ottoman with storage" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Ottoman with Storage</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Ottoman with storage to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Mattress.jpg" alt="Mattress" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Mattress</h3>
+        <p class="product-price">$289</p>
+        <button class="product-btn" onclick="alert('Added Mattress to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Lighting Fixtures.jpg" alt="Lighting Fixtures" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Lighting Fixtures</h3>
+        <p class="product-price">$199</p>
+        <button class="product-btn" onclick="alert('Added Lighting Fixtures to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Houseplants.jpg" alt="Houseplants" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Houseplants</h3>
+        <p class="product-price">$45</p>
+        <button class="product-btn" onclick="alert('Added Houseplants to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Art.jpg" alt="Wall Art" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Wall Art</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Wall Art to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Throw Pillows.jpg" alt="Throw Pillows" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Throw Pillows</h3>
+        <p class="product-price">$69</p>
+        <button class="product-btn" onclick="alert('Added Throw Pillows to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Pantry Storage.jpg" alt="Pantry Storage" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Pantry Storage</h3>
+        <p class="product-price">$29</p>
+        <button class="product-btn" onclick="alert('Added Pantry Storage to cart')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" aria-label="Customer Testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="Testimonial 1">
+    <p class="testimonial-text">"SK E-commerce transformed my shopping experience! The variety and prices are unbeatable."</p>
+    <p class="testimonial-author">- Shubham K.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2">
+    <p class="testimonial-text">"Fast shipping and excellent customer service. Highly recommend this site!"</p>
+    <p class="testimonial-author">- Manish T.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3">
+    <p class="testimonial-text">"The product quality is outstanding. I keep coming back for more."</p>
+    <p class="testimonial-author">- Shishir D.</p>
+  </div>
+  <div class="testimonial-nav" role="navigation" aria-label="Testimonials Navigation">
+    <button id="prevTestimonial" aria-label="Previous Testimonial">&#10094;</button>
+    <button id="nextTestimonial" aria-label="Next Testimonial">&#10095;</button>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter" aria-label="Newsletter Signup">
+  <h2>Stay Updated!</h2>
+  <p>Subscribe to get exclusive deals and latest news.</p>
+  <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+    <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer aria-label="Footer">
+  <div class="footer-links">
+    <a href="#about">About Us</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/" aria-label="Linkedin">Linkedin 🔗</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram">Instagram 📸</a>
+    <a href="https://github.com/shubhamzk" aria-label="GitHub">GitHub 🐙</a>
+  </div>
+  <p>&copy; 2025 Shubham. All rights reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
+

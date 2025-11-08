@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fashion - Ultimate Shopping Experience</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+<header>
+  <div><h1 class="logo">SK <span>e-commerce 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="Search products, brands, categories..." aria-label="Search products" />
+  </div>
+  <nav role="navigation" aria-label="Main Navigation">
+    <a href="#" tabindex="0">Login</a>
+    <a href="#" tabindex="0">Orders</a>
+    <a href="#" tabindex="0">Cart</a>
+  </nav>
+</header>
+
+<!-- Hero slider -->
+<section class="hero-slider" aria-label="Featured Products Slider">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <!-- <img src="Pending" alt="Latest Electronics Deals" /> -->
+      <div class="slide-content">
+        <h1>Discover Cutting-Edge Electronics</h1>
+        <p>Upgrade your tech with the latest gadgets and devices at unbeatable prices.</p>
+        <button onclick="alert('Explore Electronics')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <!-- <img src="Pending" alt="Fashion Collection" /> -->
+      <div class="slide-content">
+        <h1>Trendy Fashion for Every Season</h1>
+        <p>Find your style with new arrivals and exclusive offers on top brands.</p>
+        <button onclick="alert('Explore Fashion')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <!-- <img src="Pending" alt="Home Furniture" /> -->
+      <div class="slide-content">
+        <h1>Make Your Home Cozy & Stylish</h1>
+        <p>Explore beautiful furniture and decor to refresh your living space.</p>
+        <button onclick="alert('Explore Furniture')">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="Previous Slide" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="Next Slide" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories" aria-label="Shop Categories">
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./index.html"><img src="./Electronics 1.jpg" alt="Electronics Category" /></a>
+    <a href="./index.html"><h3>Electronics</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./fashion.html"><img src="./Fashion01.avif" alt="Fashion Category" /></a>
+    <a href="./fashion.html"><h3> Fashion </h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture.avif" alt="Home & Furniture Category" />
+    <h3>Home & Furniture</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Toys & Games.png" alt="Toys & Games Category" />
+    <h3>Toys & Games</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Books & Stationery.avif" alt="Books & Stationery Category" />
+    <h3>Books & Stationery</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Sports & Outdoors.webp" alt="Sports & Outdoors Category" />
+    <h3>Sports & Outdoors</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Mobiles & Tablets.png" alt="Mobiles & Tablets Category" />
+    <h3>Mobiles & Tablets</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Food & Drinks.avif" alt="Food & Drinks Category" />
+    <h3>Food & Drink</h3>
+  </article>
+</section>
+<section class="featured-products" aria-label="Featured Products">
+  <h2>Featured Products</h2>
+  <div class="products-grid" role="list">
+    <!-- We'll generate 20 product cards with placeholder images -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Red T-shirt.jpg" alt="Man T-shirt" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Man T-shirt</h3>
+        <p class="product-price">$19</p>
+        <button class="product-btn" onclick="alert('Added Man T-shirt to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Black Coat.webp" alt="Formal Black Coat" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Formal Black Coat</h3>
+        <p class="product-price">$199</p>
+        <button class="product-btn" onclick="alert('Added Formal Black Coat to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Black Pant.webp" alt="formal black pant" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Formal Black Pant</h3>
+        <p class="product-price">$299</p>
+        <button class="product-btn" onclick="alert('Added Formal Black Pant to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Kurta.png" alt="Kurta" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Kurta</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Kurta to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Red Saree.png" alt="Red Saree" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Red Saree</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Red Saree to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Add more similar product cards to reach 20 -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Kurti.png" alt="Kurti" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Kurti</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Kurti to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Lehenga.png" alt="Lehenga Choli" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Lehenga Choli</h3>
+        <p class="product-price">$179</p>
+        <button class="product-btn" onclick="alert('Added Lehenga Choli to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Black Jeans.webp" alt="Black Jeans" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Black Jeans</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Black Jeans to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Jacket.png" alt="Jacket" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jacket</h3>
+        <p class="product-price">$29</p>
+        <button class="product-btn" onclick="alert('Added Jacket to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Short.webp" alt="Solid Men Short" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Solid Men Short</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Solid Men Short to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Repeat similar cards to reach 20 total -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Men shoes.png" alt="Men Sports Shoes" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Men Sports Shoes</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Men Sports Shoes to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Woman Shoes.png" alt="Women Shoes" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Women Shoes</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Women to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Sandal.png" alt="Sandal" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Sandal</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Sandal to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Chinos.jpg" alt="Chinos" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Chinos</h3>
+        <p class="product-price">$99</p>
+        <button class="product-btn" onclick="alert('Added Chinos to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Loafers.jpeg" alt="Loafers" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Loafers</h3>
+        <p class="product-price">$89</p>
+        <button class="product-btn" onclick="alert('Added Loafers to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Sturdy Footwear.jpg" alt="Sturdy Footwear" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Sturdy Footwear</h3>
+        <p class="product-price">$199</p>
+        <button class="product-btn" onclick="alert('Added Sturady Footwear to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Trench Coats.jpg" alt="Trench Coats" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Trench Coats</h3>
+        <p class="product-price">$45</p>
+        <button class="product-btn" onclick="alert('Added Trench Coats to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Floral Printed Tops.jpg" alt="Floral Printed Tops" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Floral Printed Tops</h3>
+        <p class="product-price">$49</p>
+        <button class="product-btn" onclick="alert('Added Floral Printed Tops to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Activewear.jpg" alt="Activewear" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Activewear</h3>
+        <p class="product-price">$69</p>
+        <button class="product-btn" onclick="alert('Added Activewear to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Belts.jpg" alt="Belts" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Belts</h3>
+        <p class="product-price">$29</p>
+        <button class="product-btn" onclick="alert('Added Belts to cart')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" aria-label="Customer Testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="Testimonial 1">
+    <p class="testimonial-text">"SK E-commerce transformed my shopping experience! The variety and prices are unbeatable."</p>
+    <p class="testimonial-author">- Shubham K.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2">
+    <p class="testimonial-text">"Fast shipping and excellent customer service. Highly recommend this site!"</p>
+    <p class="testimonial-author">- Manish T.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3">
+    <p class="testimonial-text">"The product quality is outstanding. I keep coming back for more."</p>
+    <p class="testimonial-author">- Yogesh G.</p>
+  </div>
+  <div class="testimonial-nav" role="navigation" aria-label="Testimonials Navigation">
+    <button id="prevTestimonial" aria-label="Previous Testimonial">&#10094;</button>
+    <button id="nextTestimonial" aria-label="Next Testimonial">&#10095;</button>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter" aria-label="Newsletter Signup">
+  <h2>Stay Updated!</h2>
+  <p>Subscribe to get exclusive deals and latest news.</p>
+  <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+    <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer aria-label="Footer">
+  <div class="footer-links">
+    <a href="#about">About Us</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/" aria-label="Linkedin">Linkedin 🔗</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram">Instagram 📸</a>
+    <a href="https://github.com/shubhamzk" aria-label="GitHub">GitHub 🐙</a>
+  </div>
+  <p>&copy; 2025 Shubham. All rights reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
