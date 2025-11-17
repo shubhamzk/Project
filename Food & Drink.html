@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Books & Stationery - Ultimate Shopping Experience</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body style="background-color:LightGray;">
+
+<header>
+  <div><h1 class="logo">SK <span>e-commerce 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="Search products, brands, categories..." aria-label="Search products" />
+  </div>
+  <nav role="navigation" aria-label="Main Navigation">
+    <a href="#" tabindex="0">Login</a>
+    <a href="#" tabindex="0">Orders</a>
+    <a href="#" tabindex="0">Cart</a>
+  </nav>
+</header>
+
+<!-- Hero slider -->
+<section class="hero-slider" aria-label="Featured Products Slider">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <!-- <img src="Pending" alt="Latest Electronics Deals" /> -->
+      <div class="slide-content">
+        <h1>Discover Cutting-Edge Electronics</h1>
+        <p>Upgrade your tech with the latest gadgets and devices at unbeatable prices.</p>
+        <button onclick="alert('Explore Electronics')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <!-- <img src="Pending" alt="Fashion Collection" /> -->
+      <div class="slide-content">
+        <h1>Trendy Fashion for Every Season</h1>
+        <p>Find your style with new arrivals and exclusive offers on top brands.</p>
+        <button onclick="alert('Explore Fashion')">Shop Now</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <!-- <img src="Pending" alt="Home Furniture" /> -->
+      <div class="slide-content">
+        <h1>Make Your Home Cozy & Stylish</h1>
+        <p>Explore beautiful furniture and decor to refresh your living space.</p>
+        <button onclick="alert('Explore Furniture')">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="Previous Slide" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="Next Slide" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories" aria-label="Shop Categories">
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./index.html"><img src="./Electronics 1.jpg" alt="Electronics Category" /></a>
+    <a href="./index.html"><h3>Electronics</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./fashion.html"><img src="./Fashion.jpg" alt="Fashion Category" /></a>
+    <a href="./fashion.html"><h3> Fashion </h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture1.Jpg" alt="Home & Furniture Category" />
+    <h3>Home & Furniture</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Toys.html"><img src="./Toys & Games.png" alt="Toys & Games Category" />
+    <h3>Toys & Games</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Books & Stationery.html"><img src="./books and stationery.png" alt="Books & Stationery Category" />
+    <h3>Books & Stationery</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Sports & Outdoors.html"><img src="./Sports & Outdoors.webp" alt="Sports & Outdoors Category" />
+    <h3>Sports & Outdoors</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Mobile & Tablet.html"><img src="./Mobiles & Tablets.png" alt="Mobiles & Tablets Category" />
+    <h3>Mobiles & Tablets</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Food & Drink.html"><img src="./Food & Drink22.jpg" alt="Food & Drinks Category" />
+    <h3>Food & Drink</h3></a>
+  </article>
+</section>
+<section class="featured-products" aria-label="Featured Products">
+  <h2>Featured Products</h2>
+  <div class="products-grid" role="list">
+    <!-- We'll generate 20 product cards with placeholder images -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Rice1.jpg" alt="Rice" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Rice</h3>
+        <p class="product-price">$12</p>
+        <button class="product-btn" onclick="alert('Added Rice $12 1KG to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bread.jpg" alt="Bread" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Bread</h3>
+        <p class="product-price">$29</p>
+        <button class="product-btn" onclick="alert('Added Bread to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Vegetables.jpg" alt="Vegetables" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Vegetables</h3>
+        <p class="product-price">$46</p>
+        <button class="product-btn" onclick="alert('Added Vegetables to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Fruits.jpg" alt="Fruits" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Fruits</h3>
+        <p class="product-price">$21</p>
+        <button class="product-btn" onclick="alert('Added Fruits to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Cheese.jpg" alt="Cheese" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Cheese</h3>
+        <p class="product-price">$22</p>
+        <button class="product-btn" onclick="alert('Added Cheese to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Add more similar product cards to reach 20 -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Pasta.jpg" alt="Pasta" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Pasta</h3>
+        <p class="product-price">$20</p>
+        <button class="product-btn" onclick="alert('Added Pasta to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Pizza.jpg" alt="Pizza" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Pizza</h3>
+        <p class="product-price">$12</p>
+        <button class="product-btn" onclick="alert('Added Pizza to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Burger.jpg" alt="Burger" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Burger</h3>
+        <p class="product-price">$7</p>
+        <button class="product-btn" onclick="alert('Added Burger to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Sandwich.jpg" alt="Sandwich" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Sandwich</h3>
+        <p class="product-price">$9</p>
+        <button class="product-btn" onclick="alert('Added Sandwich to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Eggs.jpg" alt="Eggs" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Eggs</h3>
+        <p class="product-price">$9</p>
+        <button class="product-btn" onclick="alert('Added Eggs to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <!-- Repeat similar cards to reach 20 total -->
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Soup.jpg" alt="Soup" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Soup</h3>
+        <p class="product-price">$14</p>
+        <button class="product-btn" onclick="alert('Added Soup to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Tacos.jpg" alt="Tacos" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Tacos</h3>
+        <p class="product-price">$4</p>
+        <button class="product-btn" onclick="alert('Added Tacos to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Coffee.jpg" alt="Coffee" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Coffee</h3>
+        <p class="product-price">$7</p>
+        <button class="product-btn" onclick="alert('Added Coffee to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Tea.jpg" alt="Tea" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Tea</h3>
+        <p class="product-price">$6</p>
+        <button class="product-btn" onclick="alert('Added Tea to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Milk.jpg" alt="Milk" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Milk</h3>
+        <p class="product-price">$11</p>
+        <button class="product-btn" onclick="alert('Added Milk to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Orange juice.jpg" alt="Orange juice" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Orange juice</h3>
+        <p class="product-price">$9</p>
+        <button class="product-btn" onclick="alert('Added Orange juice to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Soft drinks.jpg" alt="Soft drinks" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Soft drinks</h3>
+        <p class="product-price">$11</p>
+        <button class="product-btn" onclick="alert('Added Soft drinks to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Apple juice.jpg" alt="Apple juice" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Apple juice</h3>
+        <p class="product-price">$9</p>
+        <button class="product-btn" onclick="alert('Added Hole Punch to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Jamba juice.jpg" alt="Jamba juice" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jamba juice</h3>
+        <p class="product-price">$18</p>
+        <button class="product-btn" onclick="alert('Added Jamba juice to cart')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Pineapple juice.jpg" alt="Pineapple juice" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Pineapple juice</h3>
+        <p class="product-price">$13</p>
+        <button class="product-btn" onclick="alert('Added Pineapple juice to cart')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" aria-label="Customer Testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="Testimonial 1">
+    <p class="testimonial-text">"SK E-commerce transformed my shopping experience! The variety and prices are unbeatable."</p>
+    <p class="testimonial-author">- Shubham K.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2">
+    <p class="testimonial-text">"Fast shipping and excellent customer service. Highly recommend this site!"</p>
+    <p class="testimonial-author">- Manish T.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3">
+    <p class="testimonial-text">"The product quality is outstanding. I keep coming back for more."</p>
+    <p class="testimonial-author">- Shishir D.</p>
+  </div>
+  <div class="testimonial-nav" role="navigation" aria-label="Testimonials Navigation">
+    <button id="prevTestimonial" aria-label="Previous Testimonial">&#10094;</button>
+    <button id="nextTestimonial" aria-label="Next Testimonial">&#10095;</button>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter" aria-label="Newsletter Signup">
+  <h2>Stay Updated!</h2>
+  <p>Subscribe to get exclusive deals and latest news.</p>
+  <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+    <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer aria-label="Footer">
+  <div class="footer-links">
+    <a href="#about">About Us</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/" aria-label="Linkedin">Linkedin 🔗</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram">Instagram 📸</a>
+    <a href="https://github.com/shubhamzk" aria-label="GitHub">GitHub 🐙</a>
+  </div>
+  <p>&copy; 2025 Shubham. All rights reserved.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
