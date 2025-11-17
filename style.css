@@ -450,3 +450,32 @@
   font-weight: 400;
   text-transform: none;
 }
+
+/* Language */
+.language-selector {
+  margin-left: 1rem;
+}
+
+.language-selector select {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.language-selector select:hover {
+  border-color: #888;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

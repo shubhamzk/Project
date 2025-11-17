@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>मुखपृष्ठ - श्रेष्ठ खरीदारी अनुभव</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body style="background-color:LightGray;">
+
+<header>
+  <div><h1 class="logo">एसके <span>ई-कॉमर्स 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="उत्पाद, ब्रांड, श्रेणियाँ खोजें..." aria-label="उत्पाद खोजें" />
+  </div>
+  <nav role="navigation" aria-label="मुख्य नेविगेशन">
+    <a href="#" tabindex="0">लॉगिन</a>
+    <a href="#" tabindex="0">ऑर्डर</a>
+    <a href="#" tabindex="0">कार्ट</a>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <label for="language" class="visually-hidden">Choose Language</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="hi" selected>🇮🇳 हिंदी</option>
+        <option value="en">🌐 English</option>
+       </select>
+    </div>
+  </nav>
+
+</header>
+
+<!-- हीरो स्लाइडर -->
+<section class="hero-slider" aria-label="विशेष उत्पाद स्लाइडर">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <div class="slide-content">
+        <h1>नवीनतम इलेक्ट्रॉनिक्स की खोज करें</h1>
+        <p>बेहतरीन दामों पर नवीनतम गैजेट्स और उपकरणों के साथ अपनी तकनीक को अपग्रेड करें।</p>
+        <button onclick="alert('इलेक्ट्रॉनिक्स देखें')">अभी खरीदें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <div class="slide-content">
+        <h1>हर मौसम के लिए ट्रेंडी फैशन</h1>
+        <p>नए कलेक्शन और शीर्ष ब्रांड्स पर शानदार ऑफर्स के साथ अपना स्टाइल खोजें।</p>
+        <button onclick="alert('फैशन देखें')">अभी खरीदें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <div class="slide-content">
+        <h1>अपने घर को बनाएं सुंदर और आरामदायक</h1>
+        <p>फर्नीचर और सजावट की बेहतरीन रेंज देखें और अपने घर को नया रूप दें।</p>
+        <button onclick="alert('फर्नीचर देखें')">अभी खरीदें</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="पिछला स्लाइड" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="अगला स्लाइड" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<!-- श्रेणियाँ -->
+<section class="categories" aria-label="खरीदारी श्रेणियाँ">
+  <article class="category-card">
+    <a href="./index_hi.html"><img src="./Electronics.jpg" alt="इलेक्ट्रॉनिक्स श्रेणी" /></a>
+    <a href="./index_hi.html"><h3>इलेक्ट्रॉनिक्स</h3></a>
+  </article>
+  <article class="category-card">
+    <a href="./fashion.html"><img src="./Fashion.jpg" alt="फैशन श्रेणी" /></a>
+    <a href="./fashion.html"><h3>फैशन</h3></a>
+  </article>
+  <article class="category-card">
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture.avif" alt="होम और फर्नीचर श्रेणी" />
+    <h3>होम और फर्नीचर</h3></a>
+  </article>
+  <article class="category-card">
+    <a href="./Toys.html"><img src="./Toys & Games.png" alt="खिलौने और गेम्स श्रेणी" />
+    <h3>खिलौने और गेम्स</h3></a>
+  </article>
+  <article class="category-card">
+    <a href="./Books & Stationery.html"><img src="./Books & Stationery.avif" alt="पुस्तकें और स्टेशनरी श्रेणी" />
+    <h3>पुस्तकें और स्टेशनरी</h3></a>
+  </article>
+  <article class="category-card">
+    <a href="./Sports & Outdoors.html"><img src="./Sports & Outdoors.webp" alt="खेल और आउटडोर श्रेणी" />
+    <h3>खेल और आउटडोर</h3></a>
+  </article>
+  <article class="category-card">
+    <img src="./Mobiles & Tablets.png" alt="मोबाइल और टैबलेट श्रेणी" />
+    <h3>मोबाइल और टैबलेट</h3>
+  </article>
+  <article class="category-card">
+    <img src="./Food & Drinks.avif" alt="भोजन और पेय श्रेणी" />
+    <h3>भोजन और पेय</h3>
+  </article>
+</section>
+
+<!-- विशेष उत्पाद -->
+<section class="featured-products" aria-label="विशेष उत्पाद">
+  <h2>विशेष उत्पाद</h2>
+  <div class="products-grid">
+    <article class="product-card">
+      <div class="product-img-container">
+        <img src="./Smartphone.jpg" alt="स्मार्टफोन " />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्मार्टफोन </h3>
+        <p class="product-price">₹15,799</p>
+        <button class="product-btn" onclick="alert('स्मार्टफोन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img-container">
+        <img src="./headphone.jpg" alt="नॉइस कैंसिलिंग हेडफोन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">नॉइस कैंसिलिंग हेडफोन</h3>
+        <p class="product-price">₹1,199</p>
+        <button class="product-btn" onclick="alert('हेडफोन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Smart Androind Tv.jpg" alt="स्मार्ट एंड्रॉयड टीवी" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्मार्ट एंड्रॉयड टीवी</h3>
+        <p class="product-price">₹20,299</p>
+        <button class="product-btn" onclick="alert('टीवी कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Smartwatch.jpg" alt="स्मार्टवॉच सीरीज़ 5" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्मार्टवॉच सीरीज़ 5</h3>
+        <p class="product-price">₹1,399</p>
+        <button class="product-btn" onclick="alert('स्मार्टवॉच कार्ट में जोड़ी गई')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Mixer.webp" alt="मिक्सर मशीन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">मिक्सर मशीन</h3>
+        <p class="product-price">₹3,599</p>
+        <button class="product-btn" onclick="alert('मिक्सर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Digital Camera.jpg" alt="डिजिटल कैमरा" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">डिजिटल कैमरा</h3>
+        <p class="product-price">₹35,549</p>
+        <button class="product-btn" onclick="alert('कैमरा कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Coffee Machine.jpg" alt="कॉफी मशीन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">कॉफी मशीन</h3>
+        <p class="product-price">₹15,079</p>
+        <button class="product-btn" onclick="alert('कॉफी मशीन कार्ट में जोड़ी गई')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Trimmer.jpg" alt="ट्रिमर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ट्रिमर</h3>
+        <p class="product-price">₹999</p>
+        <button class="product-btn" onclick="alert('ट्रिमर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Speaker.jpg" alt="स्पीकर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्पीकर</h3>
+        <p class="product-price">₹629</p>
+        <button class="product-btn" onclick="alert('स्पीकर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Iron.jpg" alt="ड्राई आयरन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ड्राई आयरन</h3>
+        <p class="product-price">₹799</p>
+        <button class="product-btn" onclick="alert('आयरन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bro Code.jpg" alt="बारकोड स्कैनर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">बारकोड स्कैनर</h3>
+        <p class="product-price">₹1,149</p>
+        <button class="product-btn" onclick="alert('स्कैनर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./LED Bulb.jpg" alt="एलईडी बल्ब" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">एलईडी बल्ब</h3>
+        <p class="product-price">₹199</p>
+        <button class="product-btn" onclick="alert('एलईडी बल्ब कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Table Fan.jpg" alt="टेबल फैन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">टेबल फैन</h3>
+        <p class="product-price">₹2,129</p>
+        <button class="product-btn" onclick="alert('टेबल फैन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Air Conditioner.jpg" alt="एयर कंडीशनर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">एयर कंडीशनर</h3>
+        <p class="product-price">₹15,499</p>
+        <button class="product-btn" onclick="alert('एसी कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./SanDisk Memory.webp" alt="सैनडिस्क क्रूज़र ब्लेड यूएसबी ड्राइव" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">सैनडिस्क क्रूज़र ब्लेड यूएसबी ड्राइव</h3>
+        <p class="product-price">₹549</p>
+        <button class="product-btn" onclick="alert('यूएसबी ड्राइव कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Television Remote.jpg" alt="टेलीविज़न रिमोट" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">टेलीविज़न रिमोट</h3>
+        <p class="product-price">₹212</p>
+        <button class="product-btn" onclick="alert('रिमोट कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Lamp.avif" alt="टेबल लैंप" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">टेबल लैंप</h3>
+        <p class="product-price">₹945</p>
+        <button class="product-btn" onclick="alert('लैंप कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Air Cooler.avif" alt="एयर कूलर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">एयर कूलर</h3>
+        <p class="product-price">₹2,149</p>
+        <button class="product-btn" onclick="alert('एयर कूलर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Wall Watch.webp" alt="दीवार घड़ी" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">दीवार घड़ी</h3>
+        <p class="product-price">₹469</p>
+        <button class="product-btn" onclick="alert('घड़ी कार्ट में जोड़ी गई')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Electric Bike.jpg" alt="इलेक्ट्रिक बाइक" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">इलेक्ट्रिक बाइक</h3>
+        <p class="product-price">₹18,499</p>
+        <button class="product-btn" onclick="alert('बाइक कार्ट में जोड़ी गई')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    
+    <!-- अन्य उत्पाद हिंदी में इसी प्रकार होंगे -->
+  </div>
+</section>
+
+<!-- ग्राहकों की राय -->
+<section class="testimonials" aria-label="ग्राहक प्रतिक्रिया">
+  <h2>हमारे ग्राहक क्या कहते हैं</h2>
+  <div class="testimonial-slide active">
+    <p class="testimonial-text">"एसके ई-कॉमर्स ने मेरी खरीदारी का तरीका बदल दिया! यहाँ की विविधता और कीमतें अद्भुत हैं।"</p>
+    <p class="testimonial-author">- शुभम के.</p>
+  </div>
+  <div class="testimonial-slide">
+    <p class="testimonial-text">"तेज़ डिलीवरी और उत्कृष्ट सेवा। मैं इस साइट की सिफारिश जरूर करूंगा!"</p>
+    <p class="testimonial-author">- निखिल म.</p>
+  </div>
+  <div class="testimonial-slide">
+    <p class="testimonial-text">"उत्पादों की गुणवत्ता बेहतरीन है। मैं बार-बार यहाँ से खरीदारी करता हूँ।"</p>
+    <p class="testimonial-author">- अमित बी.</p>
+  </div>
+  <div class="testimonial-nav">
+    <button id="prevTestimonial" aria-label="पिछली प्रतिक्रिया">&#10094;</button>
+    <button id="nextTestimonial" aria-label="अगली प्रतिक्रिया">&#10095;</button>
+  </div>
+</section>
+
+<!-- न्यूज़लेटर -->
+<section class="newsletter" aria-label="न्यूज़लेटर सदस्यता">
+  <h2>अपडेट रहें!</h2>
+  <p>विशेष ऑफ़र और नवीनतम समाचार सीधे अपने ईमेल पर प्राप्त करें।</p>
+  <form onsubmit="event.preventDefault(); alert('सदस्यता के लिए धन्यवाद!');">
+    <input type="email" placeholder="अपना ईमेल दर्ज करें" required aria-label="ईमेल पता" />
+    <button type="submit">सदस्य बनें</button>
+  </form>
+</section>
+
+<!-- फुटर -->
+<footer aria-label="फुटर">
+  <div class="footer-links">
+    <a href="#about">हमारे बारे में</a>
+    <a href="#terms">नियम और शर्तें</a>
+    <a href="#privacy">गोपनीयता नीति</a>
+    <a href="#contact">संपर्क करें</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/">लिंक्डइन 🔗</a>
+    <a href="https://www.instagram.com/">इंस्टाग्राम 📸</a>
+    <a href="https://github.com/shubhamzk">गिटहब 🐙</a>
+  </div>
+  <p>&copy; 2025 शुभम. सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script src="./script.js"></script>
+<script>
+function changeLanguage() {
+  const lang = document.getElementById('language').value;
+  if (lang === 'hi') {
+    window.location.href = "index_hi.html"; // Hindi version page
+  } else {
+    window.location.href = "index.html"; // English version page
+  }
+}
+</script>
+
+</body>
+</html>

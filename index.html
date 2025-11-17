@@ -19,6 +19,14 @@
     <a href="#" tabindex="0">Login</a>
     <a href="#" tabindex="0">Orders</a>
     <a href="#" tabindex="0">Cart</a>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <label for="language" class="visually-hidden">Choose Language</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="en" selected>🌐 English</option>
+        <option value="hi">🇮🇳 हिंदी</option>
+      </select>
+    </div>
   </nav>
 </header>
 
@@ -348,6 +356,16 @@
 </footer>
 
 <script src="./script.js"></script>
+<script>
+function changeLanguage() {
+  const lang = document.getElementById('language').value;
+  if (lang === 'hi') {
+    window.location.href = "index_hi.html"; // Hindi version page
+  } else {
+    window.location.href = "index.html"; // English version page
+  }
+}
+</script>
 </body>
 </html>
 
