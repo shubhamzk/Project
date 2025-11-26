@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>होम और फ़र्नीचर - बेहतरीन खरीदारी का अनुभव</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+<header>
+  <div><h1 class="logo">SK <span>ई-कॉमर्स 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="उत्पादों, ब्रांडों, श्रेणियों को खोजें..." aria-label="उत्पादों को खोजें" />
+  </div>
+  <nav role="navigation" aria-label="मुख्य नेविगेशन">
+    <a href="#" tabindex="0">लॉग इन करें</a>
+    <a href="#" tabindex="0">ऑर्डर</a>
+    <a href="#" tabindex="0">कार्ट</a>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <label for="language" class="visually-hidden">भाषा चुनें</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="hi" selected>🇮🇳 हिंदी</option>
+        <option value="en">🌐 English</option>
+       </select>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-slider" aria-label="विशेष रुप से प्रदर्शित उत्पाद स्लाइडर">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <div class="slide-content">
+        <h1>अत्याधुनिक इलेक्ट्रॉनिक्स खोजें</h1>
+        <p>अद्वितीय कीमतों पर नवीनतम गैजेट्स और उपकरणों के साथ अपनी तकनीक को अपग्रेड करें।</p>
+        <button onclick="alert('Explore Electronics')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <div class="slide-content">
+        <h1>हर मौसम के लिए ट्रेंडी फैशन</h1>
+        <p>शीर्ष ब्रांडों पर नए आगमन और विशेष ऑफ़र के साथ अपनी शैली खोजें।</p>
+        <button onclick="alert('Explore Fashion')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <div class="slide-content">
+        <h1>अपने घर को आरामदायक और स्टाइलिश बनाएं</h1>
+        <p>अपने रहने की जगह को ताज़ा करने के लिए सुंदर फर्नीचर और सजावट का अन्वेषण करें।</p>
+        <button onclick="alert('Explore Furniture')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="पिछली स्लाइड" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="अगली स्लाइड" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<section class="categories" aria-label="दुकान श्रेणियाँ">
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./index_hi.html"><img src="./Electronics 1.jpg" alt="इलेक्ट्रॉनिक्स श्रेणी" /></a>
+    <a href="./index_hi.html"><h3>इलेक्ट्रॉनिक्स</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./fashion_hi.html"><img src="./Fashion.jpg" alt="फैशन श्रेणी" /></a>
+    <a href="./fashion_hi.html"><h3> फैशन </h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Home & Furniture_hi.html"><img src="./Home & Furniture1.Jpg" alt="होम और फ़र्नीचर श्रेणी" />
+    <h3>होम और फ़र्नीचर</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Toys & Games_hi.html"><img src="./Toys & Games.png" alt="खिलौने और खेल श्रेणी" />
+    <h3>खिलौने और खेल</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Books & Stationery.avif" alt="किताबें और स्टेशनरी श्रेणी" />
+    <h3>किताबें और स्टेशनरी</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Sports & Outdoors.webp" alt="खेल और आउटडोर श्रेणी" />
+    <h3>खेल और आउटडोर</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Mobiles & Tablets.png" alt="मोबाइल और टैबलेट श्रेणी" />
+    <h3>मोबाइल और टैबलेट</h3>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <img src="./Food & Drinks.avif" alt="खाद्य और पेय श्रेणी" />
+    <h3>खाद्य और पेय</h3>
+  </article>
+</section>
+<section class="featured-products" aria-label="विशेष रुप से प्रदर्शित उत्पाद">
+  <h2>विशेष रुप से प्रदर्शित उत्पाद</h2>
+  <div class="products-grid" role="list">
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Sofa or sectional.jpg" alt="सोफा या सेक्शनल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">सोफा या सेक्शनल</h3>
+        <p class="product-price">₹10,119</p>
+        <button class="product-btn" onclick="alert('Added Sofa or sectional to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Coffee table.jpg" alt="कॉफ़ी टेबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">कॉफ़ी टेबल</h3>
+        <p class="product-price">₹4,059</p>
+        <button class="product-btn" onclick="alert('Added Coffee table to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Accent chairs.jpg" alt="एक्सेंट कुर्सियाँ" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">एक्सेंट कुर्सियाँ</h3>
+        <p class="product-price">₹3,069</p>
+        <button class="product-btn" onclick="alert('Added Accent chairs to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bookshelves or shelving units.jpg" alt="बुकशेल्व या शेल्विंग इकाइयाँ" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">बुकशेल्व या शेल्विंग इकाइयाँ</h3>
+        <p class="product-price">₹1,299</p>
+        <button class="product-btn" onclick="alert('Added Bookshelves or shelving units to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dining table.jpg" alt="डाइनिंग टेबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">डाइनिंग टेबल</h3>
+        <p class="product-price">₹10,199</p>
+        <button class="product-btn" onclick="alert('Added Dining table to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Buffet table or sideboard.jpg" alt="बुफे टेबल या साइडबोर्ड" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">बुफे टेबल या साइडबोर्ड</h3>
+        <p class="product-price">₹4,249</p>
+        <button class="product-btn" onclick="alert('Added Buffet table or sideboard to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bed frame and mattress.jpg" alt="बेड फ़्रेम और गद्दा" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">बेड फ़्रेम और गद्दा</h3>
+        <p class="product-price">₹3,179</p>
+        <button class="product-btn" onclick="alert('Added Bed frame and mattress to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Nightstands or bedside tables.jpg" alt="नाइटस्टैंड या बेडसाइड टेबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">नाइटस्टैंड या बेडसाइड टेबल</h3>
+        <p class="product-price">₹8,099</p>
+        <button class="product-btn" onclick="alert('Added Nightstand or Bedside Table to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dresser or chest of drawers.jpg" alt="ड्रेसर या दराजों का सीना" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ड्रेसर या दराजों का सीना</h3>
+        <p class="product-price">₹5,129</p>
+        <button class="product-btn" onclick="alert('Added Dresser or chest of drawer to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Wardrobe or almirah.jpg" alt="वार्डरोब या अलमारी" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">वार्डरोब या अलमारी</h3>
+        <p class="product-price">₹3,219</p>
+        <button class="product-btn" onclick="alert('Added Wardrobe or Almirah to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Dressing table .jpg" alt="ड्रेसिंग टेबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ड्रेसिंग टेबल</h3>
+        <p class="product-price">₹1,249</p>
+        <button class="product-btn" onclick="alert('Added Dressing table  to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Desk and desk chair.jpg" alt="डेस्क और डेस्क कुर्सी" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">डेस्क और डेस्क कुर्सी</h3>
+        <p class="product-price">₹2,099</p>
+        <button class="product-btn" onclick="alert('Added Desk and desk chair to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Study table.jpg" alt="स्टडी टेबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्टडी टेबल</h3>
+        <p class="product-price">₹2,049</p>
+        <button class="product-btn" onclick="alert('Added Study Table to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Ottoman with storage.jpg" alt="भंडारण के साथ ओटोमन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">भंडारण के साथ ओटोमन</h3>
+        <p class="product-price">₹2,099</p>
+        <button class="product-btn" onclick="alert('Added Ottoman with storage to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Mattress.jpg" alt="गद्दा" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">गद्दा</h3>
+        <p class="product-price">₹12,289</p>
+        <button class="product-btn" onclick="alert('Added Mattress to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Lighting Fixtures.jpg" alt="प्रकाश व्यवस्था के फिक्स्चर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">प्रकाश व्यवस्था के फिक्स्चर</h3>
+        <p class="product-price">₹8,199</p>
+        <button class="product-btn" onclick="alert('Added Lighting Fixtures to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Houseplants.jpg" alt="घरेलू पौधे" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">घरेलू पौधे</h3>
+        <p class="product-price">₹2,045</p>
+        <button class="product-btn" onclick="alert('Added Houseplants to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Art.jpg" alt="दीवार कला" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">दीवार कला</h3>
+        <p class="product-price">₹4,099</p>
+        <button class="product-btn" onclick="alert('Added Wall Art to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Throw Pillows.jpg" alt="थ्रो तकिए" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">थ्रो तकिए</h3>
+        <p class="product-price">₹1,069</p>
+        <button class="product-btn" onclick="alert('Added Throw Pillows to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Pantry Storage.jpg" alt="पैंट्री स्टोरेज" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">पैंट्री स्टोरेज</h3>
+        <p class="product-price">₹1,229</p>
+        <button class="product-btn" onclick="alert('Added Pantry Storage to cart')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="testimonials" aria-label="ग्राहक प्रशंसापत्र">
+  <h2>हमारे ग्राहक क्या कहते हैं</h2>
+  <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 1">
+    <p class="testimonial-text">"SK ई-कॉमर्स ने मेरे खरीदारी के अनुभव को बदल दिया! विविधता और कीमतें अतुलनीय हैं।"</p>
+    <p class="testimonial-author">- शुभम के.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 2">
+    <p class="testimonial-text">"तेज शिपिंग और उत्कृष्ट ग्राहक सेवा। इस साइट की अत्यधिक अनुशंसा करता हूं!"</p>
+    <p class="testimonial-author">- मनीष टी.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 3">
+    <p class="testimonial-text">"उत्पाद की गुणवत्ता उत्कृष्ट है। मैं और अधिक के लिए वापस आता रहता हूँ।"</p>
+    <p class="testimonial-author">- शिशिर डी.</p>
+  </div>
+  <div class="testimonial-nav" role="navigation" aria-label="प्रशंसापत्र नेविगेशन">
+    <button id="prevTestimonial" aria-label="पिछला प्रशंसापत्र">&#10094;</button>
+    <button id="nextTestimonial" aria-label="अगला प्रशंसापत्र">&#10095;</button>
+  </div>
+</section>
+
+<section class="newsletter" aria-label="न्यूज़लेटर साइनअप">
+  <h2>अपडेट रहें!</h2>
+  <p>विशेष सौदे और नवीनतम समाचार पाने के लिए सदस्यता लें।</p>
+  <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+    <input type="email" placeholder="अपना ईमेल दर्ज करें" required aria-label="ईमेल पता" />
+    <button type="submit">सदस्यता लें</button>
+  </form>
+</section>
+
+<footer aria-label="फ़ूटर">
+  <div class="footer-links">
+    <a href="#about">हमारे बारे में</a>
+    <a href="#terms">नियम और शर्तें</a>
+    <a href="#privacy">गोपनीयता नीति</a>
+    <a href="#contact">संपर्क</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/" aria-label="Linkedin">लिंक्डइन 🔗</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram">इंस्टाग्राम 📸</a>
+    <a href="https://github.com/shubhamzk" aria-label="GitHub">गिटहब 🐙</a>
+  </div>
+  <p>&copy; 2025 शुभम। सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script src="./script.js"></script>
+<script>
+function changeLanguage() {
+  const lang = document.getElementById('language').value;
+  if (lang === 'hi') {
+    window.location.href = "Home & Furniture_hi.html"; // Hindi version page
+  } else {
+    window.location.href = "Home & Furniture.html"; // English version page
+  }
+}
+</script>
+</body>
+</html>

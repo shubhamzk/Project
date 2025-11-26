@@ -6,7 +6,7 @@
 <title>Home & Furniture - Ultimate Shopping Experience</title>
 <link rel="stylesheet" href="./style.css"/>
 </head>
-<body style="background-color:LightGray;">
+<body>
 
 <header>
   <div><h1 class="logo">SK <span>e-commerce 🌍</span></h1></div>
@@ -18,6 +18,14 @@
     <a href="#" tabindex="0">Login</a>
     <a href="#" tabindex="0">Orders</a>
     <a href="#" tabindex="0">Cart</a>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <label for="language" class="visually-hidden">Choose Language</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="en" selected>🌐 English</option>
+        <option value="hi">🇮🇳 हिंदी</option>
+      </select>
+    </div>
   </nav>
 </header>
 
@@ -58,7 +66,7 @@
 <!-- Categories -->
 <section class="categories" aria-label="Shop Categories">
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
-    <a href="./index.html"><img src="./Electronics 1.jpg" alt="Electronics Category" /></a>
+    <a href="./index.html"><img src="./Electronics.jpg" alt="Electronics Category" /></a>
     <a href="./index.html"><h3>Electronics</h3></a>
   </article>
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
@@ -66,7 +74,7 @@
     <a href="./fashion.html"><h3> Fashion </h3></a>
   </article>
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
-    <a href="./Home & Furniture.html"><img src="./Home & Furniture1.Jpg" alt="Home & Furniture Category" />
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture.avif" alt="Home & Furniture Category" />
     <h3>Home & Furniture</h3></a>
   </article>
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
@@ -74,7 +82,7 @@
     <h3>Toys & Games</h3></a>
   </article>
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
-   <a href="./Books & Stationery.html"> <img src="./Books & Stationery.avif" alt="Books & Stationery Category" />
+    <a href="./Books & Stationery.html"><img src="./Books & Stationery.avif" alt="Books & Stationery Category" />
     <h3>Books & Stationery</h3></a>
   </article>
   <article class="category-card" tabindex="0" role="button" aria-pressed="false">
@@ -347,6 +355,16 @@
 </footer>
 
 <script src="./script.js"></script>
+<script>
+function changeLanguage() {
+  const lang = document.getElementById('language').value;
+  if (lang === 'hi') {
+    window.location.href = "Home & Furniture_hi.html"; // Hindi version page
+  } else {
+    window.location.href = "Home & Furniture.html"; // English version page
+  }
+}
+</script>
 </body>
 </html>
 
