@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>मोबाइल और टैबलेट - बेहतरीन खरीदारी का अनुभव</title>
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body style="background-color:LightGray;">
+
+<header>
+  <div><h1 class="logo">SK <span>ई-कॉमर्स 🌍</span></h1></div>
+  <div class="search-container">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 015.292 13.708l5 5-1.414 1.414-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+    <input type="text" placeholder="उत्पादों, ब्रांडों, श्रेणियों को खोजें..." aria-label="उत्पादों को खोजें" />
+  </div>
+  <nav role="navigation" aria-label="मुख्य नेविगेशन">
+    <a href="#" tabindex="0">लॉग इन करें</a>
+    <a href="#" tabindex="0">ऑर्डर</a>
+    <a href="#" tabindex="0">कार्ट</a>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <label for="language" class="visually-hidden">भाषा चुनें</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="hi" selected>🇮🇳 हिंदी</option>
+        <option value="en">🌐 English</option>
+       </select>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-slider" aria-label="विशेषीकृत उत्पाद स्लाइडर">
+  <div class="slides" id="slides">
+    <div class="slide" style="background:#333">
+      <div class="slide-content">
+        <h1>अत्याधुनिक इलेक्ट्रॉनिक्स की खोज करें</h1>
+        <p>नवीनतम गैजेट्स और उपकरणों के साथ अपनी तकनीक को अपराजेय कीमतों पर अपग्रेड करें।</p>
+        <button onclick="alert('इलेक्ट्रॉनिक्स एक्सप्लोर करें')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#1a1a40">
+      <div class="slide-content">
+        <h1>हर मौसम के लिए ट्रेंडी फैशन</h1>
+        <p>शीर्ष ब्रांडों पर नए आगमन और विशेष ऑफ़र के साथ अपनी स्टाइल खोजें।</p>
+        <button onclick="alert('फैशन एक्सप्लोर करें')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+    <div class="slide" style="background:#4a1a1a">
+      <div class="slide-content">
+        <h1>अपने घर को आरामदायक और स्टाइलिश बनाएं</h1>
+        <p>अपने रहने की जगह को ताज़ा करने के लिए सुंदर फर्नीचर और सजावट देखें।</p>
+        <button onclick="alert('फर्नीचर एक्सप्लोर करें')">अभी खरीदारी करें</button>
+      </div>
+    </div>
+  </div>
+  <div class="slider-nav">
+    <button class="prev" aria-label="पिछली स्लाइड" id="prevBtn">&#10094;</button>
+    <button class="next" aria-label="अगली स्लाइड" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+<section class="categories" aria-label="खरीदारी की श्रेणियां">
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./index.html"><img src="./Electronics 1.jpg" alt="इलेक्ट्रॉनिक्स श्रेणी" /></a>
+    <a href="./index.html"><h3>इलेक्ट्रॉनिक्स</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./fashion.html"><img src="./Fashion.jpg" alt="फैशन श्रेणी" /></a>
+    <a href="./fashion.html"><h3> फैशन </h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Home & Furniture.html"><img src="./Home & Furniture1.Jpg" alt="घर और फर्नीचर श्रेणी" />
+    <h3>घर और फर्नीचर</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Toys.html"><img src="./Toys & Games.png" alt="खिलौने और खेल श्रेणी" />
+    <h3>खिलौने और खेल</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Books & Stationery.html"><img src="./Books & Stationery.avif" alt="किताबें और स्टेशनरी श्रेणी" />
+    <h3>किताबें और स्टेशनरी</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Sports & Outdoors.html"><img src="./Sports & Outdoors.webp" alt="खेल और आउटडोर श्रेणी" />
+    <h3>खेल और आउटडोर</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Mobile & Tablet.html"><img src="./Mobile&Tab.jpg" alt="मोबाइल और टैबलेट श्रेणी" />
+    <h3>मोबाइल और टैबलेट</h3></a>
+  </article>
+  <article class="category-card" tabindex="0" role="button" aria-pressed="false">
+    <a href="./Food & Drink.html"><img src="./Food & Drinks.avif" alt="खाद्य और पेय श्रेणी" />
+    <h3>खाद्य और पेय</h3></a>
+  </article>
+</section>
+<section class="featured-products" aria-label="विशेषीकृत उत्पाद">
+  <h2>विशेषीकृत उत्पाद</h2>
+  <div class="products-grid" role="list">
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Smartphones .jpg" alt="स्मार्टफ़ोन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्मार्टफ़ोन</h3>
+        <p class="product-price">₹1,12,999</p>
+        <button class="product-btn" onclick="alert('स्मार्टफ़ोन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Tablets.jpg" alt="टैबलेट्स" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">टैबलेट्स</h3>
+        <p class="product-price">₹1,59,999</p>
+        <button class="product-btn" onclick="alert('टैबलेट्स कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./E-reader.jpg" alt="ई-रीडर" title="एक मोबाइल इलेक्ट्रॉनिक उपकरण जो मुख्य रूप से ई-पुस्तकें और पत्रिकाएँ जैसी डिजिटल सामग्री पढ़ने के लिए डिज़ाइन किया गया है।" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ई-रीडर</h3>
+        <p class="product-price">₹1,01,999</p>
+        <button class="product-btn" onclick="alert('ई-रीडर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Foldable Phones.jpg" alt="फोल्डेबल फ़ोन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">फोल्डेबल फ़ोन</h3>
+        <p class="product-price">₹1,79,999</p>
+        <button class="product-btn" onclick="alert('फोल्डेबल फ़ोन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Phone Cases.jpg" alt="फ़ोन कवर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">फ़ोन कवर</h3>
+        <p class="product-price">₹2,999</p>
+        <button class="product-btn" onclick="alert('फ़ोन कवर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Tablet Cases & Covers.jpg" alt="टैबलेट केस और कवर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">टैबलेट केस और कवर</h3>
+        <p class="product-price">₹3,999</p>
+        <button class="product-btn" onclick="alert('टैबलेट केस और कवर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Screen Protector.jpg" alt="स्क्रीन प्रोटेक्टर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्क्रीन प्रोटेक्टर</h3>
+        <p class="product-price">₹1,999</p>
+        <button class="product-btn" onclick="alert('स्क्रीन प्रोटेक्टर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Camera Privacy Covers.jpg" alt="कैमरा प्राइवेसी कवर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">कैमरा प्राइवेसी कवर</h3>
+        <p class="product-price">₹999</p>
+        <button class="product-btn" onclick="alert('कैमरा प्राइवेसी कवर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Skins & Decals.jpg" alt="स्किन और डेकल्स" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्किन और डेकल्स</h3>
+        <p class="product-price">₹1,129</p>
+        <button class="product-btn" onclick="alert('स्किन और डेकल्स कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Charger.jpg" alt="चार्जर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">चार्जर</h3>
+        <p class="product-price">₹3,079</p>
+        <button class="product-btn" onclick="alert('चार्जर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Charging Cable.jpg" alt="चार्जिंग केबल" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">चार्जिंग केबल</h3>
+        <p class="product-price">₹649</p>
+        <button class="product-btn" onclick="alert('चार्जिंग केबल कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Power Banks.jpg" alt="पावर बैंक" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">पावर बैंक</h3>
+        <p class="product-price">₹1,999</p>
+        <button class="product-btn" onclick="alert('पावर बैंक कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Wireless Charger.jpg" alt="वायरलेस चार्जर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">वायरलेस चार्जर</h3>
+        <p class="product-price">₹1,149</p>
+        <button class="product-btn" onclick="alert('वायरलेस चार्जर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Charging Dock.jpg" alt="चार्जिंग डॉक/स्टैंड" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">चार्जिंग डॉक/स्टैंड</h3>
+        <p class="product-price">₹799</p>
+        <button class="product-btn" onclick="alert('चार्जिंग डॉक/स्टैंड कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Wireless Earbud.jpg" alt="वायरलेस ईयरबड" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">वायरलेस ईयरबड</h3>
+        <p class="product-price">₹5,289</p>
+        <button class="product-btn" onclick="alert('वायरलेस ईयरबड कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bluetooth Speaker.jpg" alt="ब्लूटूथ स्पीकर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ब्लूटूथ स्पीकर</h3>
+        <p class="product-price">₹2,199</p>
+        <button class="product-btn" onclick="alert('ब्लूटूथ स्पीकर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Bluetooth Neckband.jpg" alt="ब्लूटूथ नेकबैंड" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">ब्लूटूथ नेकबैंड</h3>
+        <p class="product-price">₹1,145</p>
+        <button class="product-btn" onclick="alert('ब्लूटूथ नेकबैंड कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Adapters & Connectors.jpg" alt="एडेप्टर और कनेक्टर" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">एडेप्टर और कनेक्टर</h3>
+        <p class="product-price">₹999</p>
+        <button class="product-btn" onclick="alert('एडेप्टर और कनेक्टर कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Stylus Pen.jpg" alt="स्टाइलस पेन" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">स्टाइलस पेन</h3>
+        <p class="product-price">₹1,169</p>
+        <button class="product-btn" onclick="alert('स्टाइलस पेन कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+    <article class="product-card" role="listitem" tabindex="0">
+      <div class="product-img-container">
+        <img src="./Gaming Accessories.jpg" alt="गेमिंग एक्सेसरीज" />
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">गेमिंग एक्सेसरीज</h3>
+        <p class="product-price">₹4,129</p>
+        <button class="product-btn" onclick="alert('गेमिंग एक्सेसरीज कार्ट में जोड़ा गया')">कार्ट में जोड़ें</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="testimonials" aria-label="ग्राहक प्रशंसापत्र">
+  <h2>हमारे ग्राहक क्या कहते हैं</h2>
+  <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 1">
+    <p class="testimonial-text">"SK ई-कॉमर्स ने मेरे खरीदारी के अनुभव को बदल दिया! विविधता और कीमतें अपराजेय हैं।"</p>
+    <p class="testimonial-author">- शुभम के.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 2">
+    <p class="testimonial-text">"तेज़ शिपिंग और उत्कृष्ट ग्राहक सेवा। इस साइट की अत्यधिक अनुशंसा करता हूँ!"</p>
+    <p class="testimonial-author">- मनीष टी.</p>
+  </div>
+  <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="प्रशंसापत्र 3">
+    <p class="testimonial-text">"उत्पाद की गुणवत्ता उत्कृष्ट है। मैं और खरीदारी के लिए वापस आता रहता हूँ।"</p>
+    <p class="testimonial-author">- शिशिर डी.</p>
+  </div>
+  <div class="testimonial-nav" role="navigation" aria-label="प्रशंसापत्र नेविगेशन">
+    <button id="prevTestimonial" aria-label="पिछला प्रशंसापत्र">&#10094;</button>
+    <button id="nextTestimonial" aria-label="अगला प्रशंसापत्र">&#10095;</button>
+  </div>
+</section>
+
+<section class="newsletter" aria-label="न्यूज़लेटर साइनअप">
+  <h2>अपडेट रहें!</h2>
+  <p>विशेष सौदे और नवीनतम समाचार पाने के लिए सदस्यता लें।</p>
+  <form onsubmit="event.preventDefault(); alert('आपकी सदस्यता के लिए धन्यवाद!');">
+    <input type="email" placeholder="अपना ईमेल दर्ज करें" required aria-label="ईमेल पता" />
+    <button type="submit">सदस्यता लें</button>
+  </form>
+</section>
+
+<footer aria-label="फ़ूटर">
+  <div class="footer-links">
+    <a href="#about">हमारे बारे में</a>
+    <a href="#terms">नियम और शर्तें</a>
+    <a href="#privacy">गोपनीयता नीति</a>
+    <a href="#contact">संपर्क</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/shubham-kumbhalwar-6b6667231/" aria-label="Linkedin">लिंक्डइन 🔗</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram">इंस्टाग्राम 📸</a>
+    <a href="https://github.com/shubhamzk" aria-label="GitHub">गिटहब 🐙</a>
+  </div>
+  <p>&copy; 2025 शुभम। सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script src="./script.js"></script>
+<script>
+function changeLanguage() {
+  const lang = document.getElementById('language').value;
+  if (lang === 'hi') {
+    window.location.href = "Mobiles & Tablets_hi.html"; // Hindi version page
+  } else {
+    window.location.href = "Mobile & Tablet.html"; // English version page
+  }
+}
+</script>
+</body>
+</html>
